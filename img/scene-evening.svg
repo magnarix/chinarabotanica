@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <!-- Darker warm background — evening tone -->
+  <rect width="800" height="600" fill="#EDE8E0"/>
+  <rect width="800" height="600" fill="url(#eveningGlow)" opacity="0.5"/>
+  <defs>
+    <radialGradient id="eveningGlow" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0%" stop-color="#F2EBD8"/>
+      <stop offset="100%" stop-color="#E0D8CC"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Soft surface -->
+  <rect x="0" y="350" width="800" height="250" fill="#E4DED5"/>
+  <line x1="0" y1="350" x2="800" y2="350" stroke="#D8D2CA" stroke-width="0.5"/>
+
+  <!-- Linen texture hint -->
+  <g opacity="0.04">
+    <line x1="0" y1="370" x2="800" y2="370" stroke="#B0A898" stroke-width="0.5"/>
+    <line x1="0" y1="390" x2="800" y2="390" stroke="#B0A898" stroke-width="0.5"/>
+    <line x1="0" y1="410" x2="800" y2="410" stroke="#B0A898" stroke-width="0.5"/>
+    <line x1="0" y1="430" x2="800" y2="430" stroke="#B0A898" stroke-width="0.5"/>
+  </g>
+
+  <!-- Evening tin — center -->
+  <g transform="translate(400, 205)">
+    <ellipse cx="0" cy="145" rx="34" ry="6" fill="#D0CABC" opacity="0.5"/>
+    <rect x="-34" y="0" width="68" height="140" rx="2" fill="#E8E3DC"/>
+    <rect x="-34" y="0" width="2" height="140" fill="#F0ECE7"/>
+    <rect x="32" y="0" width="2" height="140" fill="#D6D0C8"/>
+    <ellipse cx="0" cy="0" rx="34" ry="9" fill="#EDE9E3"/>
+    <ellipse cx="0" cy="0" rx="34" ry="9" stroke="#D6D0C8" stroke-width="0.5" fill="none"/>
+    <ellipse cx="0" cy="140" rx="34" ry="9" fill="#DDD8D1"/>
+    <rect x="-34" y="65" width="68" height="3" fill="#D4C48C"/>
+    <text x="0" y="90" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#6B6560">Evening</text>
+    <text x="0" y="104" text-anchor="middle" font-family="'Helvetica Neue', sans-serif" font-size="6" fill="#9A9490" letter-spacing="0.1em">NIGHT RITUAL</text>
+  </g>
+
+  <!-- Small ceramic cup with tea — left -->
+  <g transform="translate(260, 380)">
+    <ellipse cx="0" cy="55" rx="28" ry="5" fill="#D0CABC" opacity="0.35"/>
+    <path d="M-25,12 L-22,50 Q0,58 22,50 L25,12 Z" fill="#EDE9E3" stroke="#DDD8D1" stroke-width="0.5"/>
+    <ellipse cx="0" cy="12" rx="26" ry="8" fill="#F2EEE9" stroke="#DDD8D1" stroke-width="0.5"/>
+    <ellipse cx="0" cy="14" rx="21" ry="6" fill="#D4C48C" opacity="0.2"/>
+    <!-- Gentle steam -->
+    <path d="M-3,2 C-5,-8 -2,-16 0,-22" stroke="#D8D2CA" stroke-width="0.4" fill="none" opacity="0.35"/>
+    <path d="M4,0 C6,-10 3,-18 5,-24" stroke="#D8D2CA" stroke-width="0.4" fill="none" opacity="0.25"/>
+  </g>
+
+  <!-- Dried flower sprig — right -->
+  <g transform="translate(560, 370)" stroke="#C0B8A8" stroke-width="0.6" fill="none" opacity="0.5">
+    <line x1="0" y1="80" x2="10" y2="0"/>
+    <circle cx="10" cy="0" r="4" fill="#D4C48C" opacity="0.25" stroke="none"/>
+    <path d="M8,20 Q-2,12 2,2"/>
+    <path d="M9,35 Q18,25 14,15"/>
+    <path d="M7,50 Q-4,42 0,30"/>
+    <circle cx="2" cy="2" r="2.5" fill="#D4C48C" opacity="0.15" stroke="none"/>
+    <circle cx="14" cy="15" r="2" fill="#D4C48C" opacity="0.15" stroke="none"/>
+  </g>
+
+  <!-- Warm ambient light (candle glow suggestion) -->
+  <circle cx="400" cy="300" r="200" fill="#F2EBD8" opacity="0.08"/>
+  <circle cx="400" cy="280" r="80" fill="#D4C48C" opacity="0.04"/>
+
+  <!-- Fabric fold lines -->
+  <path d="M0,500 Q200,480 400,500 Q600,520 800,500" stroke="#D0CABC" stroke-width="0.5" fill="none" opacity="0.3"/>
+</svg>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Rituals — Chinara Botanica</title>
+  <meta name="description" content="Explore the full collection of botanical compositions — five rituals designed for every moment of your day.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-collection">
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo"><span>Chinara</span> Botanica</a>
+      <nav class="header__nav">
+        <a href="index.html">Home</a>
+        <a href="collection.html" class="active">Rituals</a>
+        <a href="about.html">About</a>
+        <a href="#" class="header__cart">Cart <span class="header__cart-count">0</span></a>
+      </nav>
+      <button class="header__menu-btn" id="menuBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="collection.html">Rituals</a>
+    <a href="product.html">Study Ritual</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <!-- Collection Hero -->
+  <section class="coll-hero">
+    <div class="container">
+      <div class="coll-hero__inner">
+        <div class="coll-hero__line fade-up delay-1"></div>
+        <p class="label fade-up delay-2">The Collection</p>
+        <h1 class="fade-up delay-3">All Rituals</h1>
+        <p class="coll-hero__desc fade-up delay-4">Five botanical compositions, each designed for a distinct moment in your day. Together, they form a complete system for living with intention.</p>
+        <div class="coll-hero__count fade-up delay-5">
+          <span>5 compositions</span>
+          <span class="coll-hero__count-sep"></span>
+          <span>1 intentional day</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section class="coll-filters">
+    <div class="container">
+      <div class="coll-filters__inner fade-in">
+        <div class="coll-filters__group">
+          <span class="coll-filters__label">Time of Day</span>
+          <div class="coll-filters__buttons" id="filterTime">
+            <button class="coll-filter active" data-time="all">All</button>
+            <button class="coll-filter" data-time="morning">Morning</button>
+            <button class="coll-filter" data-time="anytime">Anytime</button>
+            <button class="coll-filter" data-time="afternoon">Afternoon</button>
+            <button class="coll-filter" data-time="after-meal">After Meal</button>
+            <button class="coll-filter" data-time="night">Night</button>
+          </div>
+        </div>
+        <div class="coll-filters__sep"></div>
+        <div class="coll-filters__group">
+          <span class="coll-filters__label">Feeling</span>
+          <div class="coll-filters__buttons" id="filterFeeling">
+            <button class="coll-filter active" data-feeling="all">All</button>
+            <button class="coll-filter" data-feeling="reset">Reset</button>
+            <button class="coll-filter" data-feeling="balance">Balance</button>
+            <button class="coll-filter" data-feeling="focus">Focus</button>
+            <button class="coll-filter" data-feeling="satisfy">Satisfy</button>
+            <button class="coll-filter" data-feeling="unwind">Unwind</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="coll-grid-section">
+    <div class="container">
+      <div class="coll-grid" id="collectionGrid">
+
+        <!-- Refresh Ritual -->
+        <a href="collection.html" class="coll-card fade-in" data-time="morning" data-feeling="reset">
+          <div class="coll-card__strip" style="background-color: var(--color-refresh);"></div>
+          <div class="coll-card__image">
+            <img src="img/tin-refresh.svg" alt="Refresh Ritual tin" class="coll-card__img">
+            <div class="coll-card__overlay">
+              <p class="coll-card__overlay-desc">A bright awakening. Citrus and herb to greet the day with clarity and presence.</p>
+              <span class="coll-card__overlay-cta">View Ritual</span>
+            </div>
+          </div>
+          <div class="coll-card__body">
+            <div class="coll-card__meta">
+              <span class="coll-card__name">Refresh Ritual</span>
+              <span class="coll-card__price">$34</span>
+            </div>
+            <div class="coll-card__tags">
+              <span class="coll-card__tag">Morning</span>
+              <span class="coll-card__tag-sep"></span>
+              <span class="coll-card__tag">Reset</span>
+            </div>
+            <p class="coll-card__notes">Citrus peel, peppermint, lemongrass</p>
+          </div>
+        </a>
+
+        <!-- Daily Ritual -->
+        <a href="collection.html" class="coll-card fade-in" data-time="anytime" data-feeling="balance">
+          <div class="coll-card__strip" style="background-color: var(--color-daily);"></div>
+          <div class="coll-card__image">
+            <img src="img/tin-daily.svg" alt="Daily Ritual tin" class="coll-card__img">
+            <div class="coll-card__overlay">
+              <p class="coll-card__overlay-desc">Your constant companion. Light, balanced, effortless — for any moment that calls for calm.</p>
+              <span class="coll-card__overlay-cta">View Ritual</span>
+            </div>
+          </div>
+          <div class="coll-card__body">
+            <div class="coll-card__meta">
+              <span class="coll-card__name">Daily Ritual</span>
+              <span class="coll-card__price">$32</span>
+            </div>
+            <div class="coll-card__tags">
+              <span class="coll-card__tag">Anytime</span>
+              <span class="coll-card__tag-sep"></span>
+              <span class="coll-card__tag">Balance</span>
+            </div>
+            <p class="coll-card__notes">Sencha, chamomile, oat straw</p>
+          </div>
+        </a>
+
+        <!-- Study Ritual -->
+        <a href="product.html" class="coll-card fade-in" data-time="afternoon" data-feeling="focus">
+          <div class="coll-card__strip" style="background-color: var(--color-study);"></div>
+          <div class="coll-card__image">
+            <img src="img/tin-study.svg" alt="Study Ritual tin" class="coll-card__img">
+            <div class="coll-card__overlay">
+              <p class="coll-card__overlay-desc">Deep focus. Earthy roasted notes for sustained, quiet attention without the crash.</p>
+              <span class="coll-card__overlay-cta">View Ritual</span>
+            </div>
+          </div>
+          <div class="coll-card__body">
+            <div class="coll-card__meta">
+              <span class="coll-card__name">Study Ritual</span>
+              <span class="coll-card__price">$38</span>
+            </div>
+            <div class="coll-card__tags">
+              <span class="coll-card__tag">Afternoon</span>
+              <span class="coll-card__tag-sep"></span>
+              <span class="coll-card__tag">Focus</span>
+            </div>
+            <p class="coll-card__notes">Roasted green tea, ginkgo leaf, rosemary</p>
+          </div>
+        </a>
+
+        <!-- Post-Meal Ritual -->
+        <a href="collection.html" class="coll-card fade-in" data-time="after-meal" data-feeling="satisfy">
+          <div class="coll-card__strip" style="background-color: var(--color-postmeal);"></div>
+          <div class="coll-card__image">
+            <img src="img/tin-postmeal.svg" alt="Post-Meal Ritual tin" class="coll-card__img">
+            <div class="coll-card__overlay">
+              <p class="coll-card__overlay-desc">A gentle close to the table. Warm and settling, with spiced comfort that lingers softly.</p>
+              <span class="coll-card__overlay-cta">View Ritual</span>
+            </div>
+          </div>
+          <div class="coll-card__body">
+            <div class="coll-card__meta">
+              <span class="coll-card__name">Post-Meal Ritual</span>
+              <span class="coll-card__price">$34</span>
+            </div>
+            <div class="coll-card__tags">
+              <span class="coll-card__tag">After Meal</span>
+              <span class="coll-card__tag-sep"></span>
+              <span class="coll-card__tag">Satisfy</span>
+            </div>
+            <p class="coll-card__notes">Cinnamon bark, fennel seed, liquorice root</p>
+          </div>
+        </a>
+
+        <!-- Evening Ritual -->
+        <a href="collection.html" class="coll-card fade-in" data-time="night" data-feeling="unwind">
+          <div class="coll-card__strip" style="background-color: var(--color-evening);"></div>
+          <div class="coll-card__image">
+            <img src="img/tin-evening.svg" alt="Evening Ritual tin" class="coll-card__img">
+            <div class="coll-card__overlay">
+              <p class="coll-card__overlay-desc">Wind down softly. Floral calm and golden warmth for the closing hours of the day.</p>
+              <span class="coll-card__overlay-cta">View Ritual</span>
+            </div>
+          </div>
+          <div class="coll-card__body">
+            <div class="coll-card__meta">
+              <span class="coll-card__name">Evening Ritual</span>
+              <span class="coll-card__price">$36</span>
+            </div>
+            <div class="coll-card__tags">
+              <span class="coll-card__tag">Night</span>
+              <span class="coll-card__tag-sep"></span>
+              <span class="coll-card__tag">Unwind</span>
+            </div>
+            <p class="coll-card__notes">Chrysanthemum, lavender, honey bush</p>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- No results message -->
+      <div class="coll-empty" id="collectionEmpty">
+        <p class="coll-empty__text">No rituals match your current filters.</p>
+        <button class="btn btn--outline" id="clearFilters">View All Rituals</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Full Day Set -->
+  <section class="coll-set">
+    <div class="container">
+      <div class="coll-set__inner fade-in">
+        <div class="coll-set__visual">
+          <img src="img/set-fullday.svg" alt="The Full Day Set — all five ritual tins" class="coll-set__img">
+        </div>
+        <div class="coll-set__content">
+          <p class="label">Complete Collection</p>
+          <h2>The Full Day Set</h2>
+          <p class="coll-set__price">$160 <span class="coll-set__save">save $30</span></p>
+          <p class="coll-set__desc">All five rituals in a single presentation box. A complete system for moving through your day with intention.</p>
+          <button class="btn btn--primary">Add Set to Ritual</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy -->
+  <section class="coll-philosophy">
+    <div class="container container--narrow">
+      <div class="coll-philosophy__inner fade-in">
+        <div class="coll-philosophy__line"></div>
+        <p class="label">Our Approach</p>
+        <blockquote class="coll-philosophy__quote">"Each ritual is a composition — not a formula, but a harmony."</blockquote>
+        <p class="coll-philosophy__text">We source single-origin botanicals from growers who understand that great ingredients need patience, not intervention.</p>
+        <div class="coll-philosophy__line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <p class="footer__brand-name">Chinara Botanica</p>
+          <p class="footer__brand-desc">A formulation house creating botanical compositions for daily rituals.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Shop</h4>
+          <a href="collection.html">All Rituals</a>
+          <a href="product.html">Study Ritual</a>
+          <a href="collection.html">The Full Day Set</a>
+        </div>
+        <div class="footer__col">
+          <h4>About</h4>
+          <a href="about.html">Our Story</a>
+          <a href="about.html">Philosophy</a>
+          <a href="about.html">Process</a>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Contact</a>
+          <a href="#">Press</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Chinara Botanica. All rights reserved.</span>
+        <span>Botanical compositions for daily rituals</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

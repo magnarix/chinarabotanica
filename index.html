@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chinara Botanica — Botanical Compositions for Daily Rituals</title>
+  <meta name="description" content="A formulation house creating botanical compositions for daily rituals. Calm, refined, intentional.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo"><span>Chinara</span> Botanica</a>
+      <nav class="header__nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="collection.html">Rituals</a>
+        <a href="about.html">About</a>
+        <a href="#" class="header__cart">Cart <span class="header__cart-count">0</span></a>
+      </nav>
+      <button class="header__menu-btn" id="menuBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="collection.html">Rituals</a>
+    <a href="product.html">Study Ritual</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__ambient"></div>
+    <div class="hero__content">
+      <div class="hero__line fade-up delay-1"></div>
+      <p class="label hero__label fade-up delay-2">Chinara Botanica</p>
+      <h1 class="fade-up delay-3">A Ritual for Every<br>Moment of the Day</h1>
+      <p class="hero__subtitle fade-up delay-4">Botanical compositions designed for clarity, balance, and calm.</p>
+      <a href="collection.html" class="btn btn--primary fade-up delay-5">Explore the Collection</a>
+    </div>
+    <div class="hero__scroll fade-up delay-6">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Brand Statement -->
+  <section class="section section--large brand-statement">
+    <div class="container container--narrow">
+      <div class="brand-statement__inner fade-in">
+        <div class="brand-statement__line"></div>
+        <p class="brand-statement__text">We believe in the quiet power of plants.<br>Each composition is an invitation to pause,<br>to breathe, and to return to the present moment.</p>
+        <div class="brand-statement__line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Five Ritual System -->
+  <section class="section section--large rituals-system">
+    <div class="container">
+      <div class="rituals-system__header fade-in">
+        <p class="label">The Five Rituals</p>
+        <h2>A System for the Day</h2>
+        <p class="rituals-system__subtitle">Five compositions. One intentional day.</p>
+      </div>
+      <div class="rituals-system__timeline fade-in">
+        <div class="rituals-system__line"></div>
+        <div class="rituals-system__cards">
+          <a href="collection.html" class="ritual-card" data-ritual="refresh">
+            <div class="ritual-card__dot" style="background-color: var(--color-refresh);"></div>
+            <div class="ritual-card__content">
+              <span class="ritual-card__time">6 am</span>
+              <h3 class="ritual-card__name">Refresh</h3>
+              <p class="ritual-card__moment">Morning</p>
+              <p class="ritual-card__desc">A bright awakening. Citrus and herb to greet the day with clarity.</p>
+            </div>
+          </a>
+          <a href="collection.html" class="ritual-card" data-ritual="daily">
+            <div class="ritual-card__dot" style="background-color: var(--color-daily);"></div>
+            <div class="ritual-card__content">
+              <span class="ritual-card__time">10 am</span>
+              <h3 class="ritual-card__name">Daily</h3>
+              <p class="ritual-card__moment">Anytime</p>
+              <p class="ritual-card__desc">Your constant companion. Light, balanced, effortless.</p>
+            </div>
+          </a>
+          <a href="product.html" class="ritual-card" data-ritual="study">
+            <div class="ritual-card__dot" style="background-color: var(--color-study);"></div>
+            <div class="ritual-card__content">
+              <span class="ritual-card__time">2 pm</span>
+              <h3 class="ritual-card__name">Study</h3>
+              <p class="ritual-card__moment">Afternoon</p>
+              <p class="ritual-card__desc">Deep focus. Earthy notes for sustained, quiet attention.</p>
+            </div>
+          </a>
+          <a href="collection.html" class="ritual-card" data-ritual="postmeal">
+            <div class="ritual-card__dot" style="background-color: var(--color-postmeal);"></div>
+            <div class="ritual-card__content">
+              <span class="ritual-card__time">7 pm</span>
+              <h3 class="ritual-card__name">Post-Meal</h3>
+              <p class="ritual-card__moment">After eating</p>
+              <p class="ritual-card__desc">A gentle close to the table. Warm and settling.</p>
+            </div>
+          </a>
+          <a href="collection.html" class="ritual-card" data-ritual="evening">
+            <div class="ritual-card__dot" style="background-color: var(--color-evening);"></div>
+            <div class="ritual-card__content">
+              <span class="ritual-card__time">9 pm</span>
+              <h3 class="ritual-card__name">Evening</h3>
+              <p class="ritual-card__moment">Night</p>
+              <p class="ritual-card__desc">Wind down softly. Floral calm for the closing hours.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Product: Study Ritual -->
+  <section class="section--large featured">
+    <div class="featured__grid">
+      <div class="featured__image fade-in">
+        <img src="img/scene-workspace.svg" alt="Study Ritual in a calm workspace setting" class="featured__img">
+      </div>
+      <div class="featured__content fade-in">
+        <p class="label">Featured Composition</p>
+        <h2>Study Ritual</h2>
+        <p class="featured__price">$38</p>
+        <p class="featured__desc">A grounding composition of roasted green tea, ginkgo leaf, and rosemary — designed for moments that ask for your full attention.</p>
+        <p class="featured__tagline"><em>Steep slowly. Think clearly.</em></p>
+        <dl class="featured__notes">
+          <div class="featured__note">
+            <dt>Base</dt>
+            <dd>Roasted Green Tea</dd>
+          </div>
+          <div class="featured__note">
+            <dt>Heart</dt>
+            <dd>Ginkgo Leaf</dd>
+          </div>
+          <div class="featured__note">
+            <dt>Accent</dt>
+            <dd>Rosemary</dd>
+          </div>
+        </dl>
+        <div class="featured__actions">
+          <a href="product.html" class="btn btn--primary">View Product</a>
+          <a href="collection.html" class="btn btn--link">See All Rituals</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ritual Set -->
+  <section class="section section--large ritual-set">
+    <div class="container">
+      <div class="ritual-set__inner fade-in">
+        <div class="ritual-set__visual">
+          <img src="img/set-fullday.svg" alt="The Full Day Set — all five ritual tins" class="ritual-set__img">
+        </div>
+        <div class="ritual-set__content">
+          <p class="label">Complete Collection</p>
+          <h2>The Full Day Set</h2>
+          <p class="ritual-set__price">$160 <span class="ritual-set__save">save $30</span></p>
+          <p class="ritual-set__desc">All five rituals in a single presentation box. A complete system for moving through your day with intention.</p>
+          <a href="collection.html" class="btn btn--outline">Explore the Set</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy: Composition over Formulation -->
+  <section class="section--large philosophy-full">
+    <div class="container container--narrow">
+      <div class="philosophy-full__inner fade-in">
+        <div class="philosophy-full__line"></div>
+        <p class="label">Our Approach</p>
+        <blockquote class="philosophy-full__quote">
+          "We do not formulate.<br>We compose."
+        </blockquote>
+        <p class="philosophy-full__text">Each botanical is chosen not for what it does alone, but for how it harmonizes with the whole — creating something greater than any single element.</p>
+        <div class="philosophy-full__line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Minimal Product Grid -->
+  <section class="section section--large product-grid">
+    <div class="container">
+      <div class="product-grid__header fade-in">
+        <p class="label">Shop</p>
+        <h2>The Collection</h2>
+      </div>
+      <div class="product-grid__items">
+        <a href="collection.html" class="product-card fade-in">
+          <div class="product-card__image">
+            <img src="img/tin-refresh.svg" alt="Refresh Ritual tin" class="product-card__img">
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__name">Refresh Ritual</span>
+            <span class="product-card__price">$34</span>
+          </div>
+          <p class="product-card__tag">Morning</p>
+        </a>
+        <a href="product.html" class="product-card fade-in">
+          <div class="product-card__image">
+            <img src="img/tin-study.svg" alt="Study Ritual tin" class="product-card__img">
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__name">Study Ritual</span>
+            <span class="product-card__price">$38</span>
+          </div>
+          <p class="product-card__tag">Afternoon</p>
+        </a>
+        <a href="collection.html" class="product-card fade-in">
+          <div class="product-card__image">
+            <img src="img/tin-evening.svg" alt="Evening Ritual tin" class="product-card__img">
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__name">Evening Ritual</span>
+            <span class="product-card__price">$36</span>
+          </div>
+          <p class="product-card__tag">Night</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing Line -->
+  <section class="section--large closing">
+    <div class="container container--narrow">
+      <div class="closing__inner fade-in">
+        <div class="closing__line"></div>
+        <p class="closing__text">Rituals create rhythm.<br>Rhythm creates clarity.</p>
+        <div class="closing__line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Email Signup -->
+  <section class="section section--large signup">
+    <div class="container container--narrow fade-in">
+      <p class="label">Stay Close</p>
+      <h2>Join the Ritual</h2>
+      <p class="signup__text">Receive notes on new compositions, seasonal rituals, and the quieter side of botanical living.</p>
+      <form class="signup__form" onsubmit="event.preventDefault();">
+        <input type="email" class="signup__input" placeholder="Your email address" required>
+        <button type="submit" class="signup__submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <p class="footer__brand-name">Chinara Botanica</p>
+          <p class="footer__brand-desc">A formulation house creating botanical compositions for daily rituals.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Shop</h4>
+          <a href="collection.html">All Rituals</a>
+          <a href="product.html">Study Ritual</a>
+          <a href="collection.html">The Full Day Set</a>
+        </div>
+        <div class="footer__col">
+          <h4>About</h4>
+          <a href="about.html">Our Story</a>
+          <a href="about.html">Philosophy</a>
+          <a href="about.html">Process</a>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Contact</a>
+          <a href="#">Press</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Chinara Botanica. All rights reserved.</span>
+        <span>Botanical compositions for daily rituals</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

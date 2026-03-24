@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Ritual — Chinara Botanica</title>
+  <meta name="description" content="A roasted botanical focus composition. Calm, sustained clarity — without the crash. Roasted root, fresh herb, gentle spice.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-product">
+
+  <!-- Header -->
+  <header class="header header--product" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo"><span>Chinara</span> Botanica</a>
+      <nav class="header__nav">
+        <a href="index.html">Home</a>
+        <a href="collection.html">Rituals</a>
+        <a href="about.html">About</a>
+        <a href="#" class="header__cart">Cart <span class="header__cart-count">0</span></a>
+      </nav>
+      <button class="header__menu-btn" id="menuBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="collection.html">Rituals</a>
+    <a href="product.html">Study Ritual</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <!-- =========================================
+       SECTION 1: PRODUCT HERO
+       ========================================= -->
+  <section class="pdp-hero">
+    <div class="pdp-hero__gallery">
+      <div class="pdp-hero__gallery-inner">
+        <img src="img/tin-study.svg" alt="Study Ritual — cylindrical tin with deep green accent band" class="pdp-hero__product-img">
+      </div>
+    </div>
+
+    <div class="pdp-hero__content">
+      <nav class="pdp-hero__breadcrumb fade-up delay-1">
+        <a href="index.html">Home</a>
+        <span class="pdp-hero__breadcrumb-sep">/</span>
+        <a href="collection.html">Rituals</a>
+        <span class="pdp-hero__breadcrumb-sep">/</span>
+        <span>Study</span>
+      </nav>
+
+      <div class="pdp-hero__text">
+        <p class="label fade-up delay-2">Afternoon Ritual</p>
+        <h1 class="fade-up delay-3">Study<br>Ritual</h1>
+        <p class="pdp-hero__tagline fade-up delay-4"><em>Focus, without force.</em></p>
+        <p class="pdp-hero__price fade-up delay-4">$38</p>
+        <p class="pdp-hero__desc fade-up delay-5">A roasted botanical composition for sustained clarity. Earthy, grounding, and quietly focused — designed for the hours that matter most.</p>
+      </div>
+
+      <div class="pdp-hero__purchase fade-up delay-5">
+        <div class="pdp-hero__quantity">
+          <span class="pdp-hero__quantity-label">Qty</span>
+          <div class="pdp-hero__quantity-control">
+            <button id="qtyMinus" aria-label="Decrease quantity">&minus;</button>
+            <span id="qtyValue">1</span>
+            <button id="qtyPlus" aria-label="Increase quantity">+</button>
+          </div>
+        </div>
+        <button class="btn btn--study" id="addToRitual">Add to Ritual</button>
+      </div>
+
+      <div class="pdp-hero__micro fade-up delay-6">
+        <span>Free shipping over $80</span>
+        <span class="pdp-hero__micro-sep"></span>
+        <span>~25 servings</span>
+        <span class="pdp-hero__micro-sep"></span>
+        <span>Loose leaf</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       SECTION 2: THE PROBLEM
+       ========================================= -->
+  <section class="pdp-problem">
+    <div class="container container--narrow">
+      <div class="pdp-problem__inner fade-in">
+        <div class="pdp-problem__line"></div>
+        <p class="pdp-problem__text">Coffee sharpens, then fades.<br>Focus becomes effort.<br>The mind races, then stalls.</p>
+        <p class="pdp-problem__sub">There is another way to be present.</p>
+        <div class="pdp-problem__line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       SECTION 3: THE SOLUTION
+       ========================================= -->
+  <section class="pdp-solution">
+    <div class="pdp-solution__grid">
+      <div class="pdp-solution__visual fade-in">
+        <img src="img/scene-workspace.svg" alt="A calm workspace with tea and an open notebook" class="pdp-solution__img">
+      </div>
+      <div class="pdp-solution__content fade-in">
+        <p class="label">The Study Ritual</p>
+        <h2>Calm, sustained clarity</h2>
+        <p class="pdp-solution__desc">Study Ritual is a roasted botanical composition that supports focus without stimulation. No spike, no crash — just a steady, grounded presence that stays with you through the afternoon.</p>
+        <p class="pdp-solution__desc">Where coffee pushes, this composition <em>settles</em>. It creates the conditions for deep work by quieting everything that isn't essential.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       SECTION 4: THE EXPERIENCE
+       ========================================= -->
+  <section class="pdp-experience">
+    <div class="container">
+      <div class="pdp-experience__header fade-in">
+        <p class="label">The Experience</p>
+        <h2>What to expect</h2>
+      </div>
+      <div class="pdp-experience__stages">
+        <div class="pdp-experience__stage fade-in">
+          <div class="pdp-experience__stage-number">01</div>
+          <div class="pdp-experience__stage-line"></div>
+          <h3>Clear start</h3>
+          <p>The first sip is the threshold. Roasted warmth fills the mouth. The mind begins to still. Distraction fades to background.</p>
+        </div>
+        <div class="pdp-experience__stage fade-in">
+          <div class="pdp-experience__stage-number">02</div>
+          <div class="pdp-experience__stage-line"></div>
+          <h3>Steady focus</h3>
+          <p>A gentle, sustained clarity settles in. Not the sharp edge of caffeine, but something deeper — an unhurried attention that holds without effort.</p>
+        </div>
+        <div class="pdp-experience__stage fade-in">
+          <div class="pdp-experience__stage-number">03</div>
+          <div class="pdp-experience__stage-line"></div>
+          <h3>No crash</h3>
+          <p>When you set down the cup, focus doesn't leave. There is no cliff. The calm simply continues — a quiet undercurrent that carries you through.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       SECTION 5: COMPOSITION
+       ========================================= -->
+  <section class="pdp-composition">
+    <div class="container">
+      <div class="pdp-composition__header fade-in">
+        <p class="label">The Composition</p>
+        <h2>Roasted roots. Fresh herbs.<br>Nothing more.</h2>
+      </div>
+      <div class="pdp-composition__grid">
+        <div class="pdp-composition__item fade-in">
+          <div class="pdp-composition__item-visual">
+            <div class="pdp-composition__item-circle" style="background-color: rgba(90, 122, 90, 0.15);"></div>
+          </div>
+          <div class="pdp-composition__item-content">
+            <span class="pdp-composition__item-role">Base</span>
+            <h3>Roasted Green Tea</h3>
+            <p>Japanese Hojicha — slow-roasted over charcoal. Deep, warm, earthy. The foundation that grounds every cup.</p>
+          </div>
+        </div>
+        <div class="pdp-composition__item fade-in">
+          <div class="pdp-composition__item-visual">
+            <div class="pdp-composition__item-circle" style="background-color: rgba(90, 122, 90, 0.25);"></div>
+          </div>
+          <div class="pdp-composition__item-content">
+            <span class="pdp-composition__item-role">Heart</span>
+            <h3>Ginkgo Leaf</h3>
+            <p>Ancient, considered, quietly powerful. A botanical companion to clear thinking — used for centuries, never hurried.</p>
+          </div>
+        </div>
+        <div class="pdp-composition__item fade-in">
+          <div class="pdp-composition__item-visual">
+            <div class="pdp-composition__item-circle" style="background-color: rgba(90, 122, 90, 0.1);"></div>
+          </div>
+          <div class="pdp-composition__item-content">
+            <span class="pdp-composition__item-role">Accent</span>
+            <h3>Rosemary</h3>
+            <p>A fresh, herbal lift. Just enough brightness to keep the composition from turning inward. The element that keeps you present.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       SECTION 6: TASTING NOTES
+       ========================================= -->
+  <section class="pdp-notes">
+    <div class="container container--narrow">
+      <div class="pdp-notes__inner fade-in">
+        <p class="label">Tasting Notes</p>
+        <div class="pdp-notes__items">
+          <div class="pdp-notes__item">
+            <div class="pdp-notes__dot" style="background-color: rgba(90, 122, 90, 0.6);"></div>
+            <span class="pdp-notes__name">Roasted Root</span>
+            <span class="pdp-notes__desc">Warm, deep, charcoal-kissed</span>
+          </div>
+          <div class="pdp-notes__sep"></div>
+          <div class="pdp-notes__item">
+            <div class="pdp-notes__dot" style="background-color: rgba(90, 122, 90, 0.4);"></div>
+            <span class="pdp-notes__name">Fresh Herb</span>
+            <span class="pdp-notes__desc">Clean, aromatic, grounding</span>
+          </div>
+          <div class="pdp-notes__sep"></div>
+          <div class="pdp-notes__item">
+            <div class="pdp-notes__dot" style="background-color: rgba(90, 122, 90, 0.25);"></div>
+            <span class="pdp-notes__name">Gentle Spice</span>
+            <span class="pdp-notes__desc">A whisper of warmth at the finish</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       SECTION 7: BREWING / PREPARATION
+       ========================================= -->
+  <section class="pdp-brewing">
+    <div class="container">
+      <div class="pdp-brewing__grid">
+        <div class="pdp-brewing__visual fade-in">
+          <img src="img/scene-flatlay.svg" alt="Flat lay of botanical ingredients, loose leaf tea, and a ceramic cup" class="pdp-brewing__img">
+        </div>
+        <div class="pdp-brewing__content fade-in">
+          <p class="label">Preparation</p>
+          <h2>The brewing ritual</h2>
+          <div class="pdp-brewing__steps">
+            <div class="pdp-brewing__step">
+              <span class="pdp-brewing__step-num">01</span>
+              <div>
+                <h4>Heat</h4>
+                <p>Bring water to 85°C (185°F). Not boiling — just below. The roasted leaves prefer patience.</p>
+              </div>
+            </div>
+            <div class="pdp-brewing__step">
+              <span class="pdp-brewing__step-num">02</span>
+              <div>
+                <h4>Measure</h4>
+                <p>One heaped teaspoon per cup. Place into your vessel of choice — a pot, a gaiwan, whatever feels right.</p>
+              </div>
+            </div>
+            <div class="pdp-brewing__step">
+              <span class="pdp-brewing__step-num">03</span>
+              <div>
+                <h4>Steep</h4>
+                <p>3–4 minutes for the first infusion. The roasted base reveals itself first. Steep again for the herbal subtleties.</p>
+              </div>
+            </div>
+            <div class="pdp-brewing__step">
+              <span class="pdp-brewing__step-num">04</span>
+              <div>
+                <h4>Begin</h4>
+                <p>Let the aroma ground you before the first sip. This is the transition — from scattered to settled.</p>
+              </div>
+            </div>
+          </div>
+          <div class="pdp-brewing__specs">
+            <div class="pdp-brewing__spec">
+              <dt>Temperature</dt>
+              <dd>85°C / 185°F</dd>
+            </div>
+            <div class="pdp-brewing__spec">
+              <dt>Steep time</dt>
+              <dd>3–4 minutes</dd>
+            </div>
+            <div class="pdp-brewing__spec">
+              <dt>Infusions</dt>
+              <dd>2 recommended</dd>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       SECTION 8: FINAL CTA
+       ========================================= -->
+  <section class="pdp-final-cta">
+    <div class="container container--narrow">
+      <div class="pdp-final-cta__inner fade-in">
+        <div class="pdp-final-cta__line"></div>
+        <p class="label">Study Ritual</p>
+        <p class="pdp-final-cta__quote">"This is not a beverage.<br>It is a threshold."</p>
+        <p class="pdp-final-cta__price">$38 <span>— 50g loose leaf, ~25 servings</span></p>
+        <button class="btn btn--study" id="addToRitualBottom">Add to Ritual</button>
+        <div class="pdp-final-cta__line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       RELATED PRODUCTS
+       ========================================= -->
+  <section class="section section--large product-grid">
+    <div class="container">
+      <div class="product-grid__header fade-in">
+        <p class="label">Complete Your Day</p>
+        <h2>Other Rituals</h2>
+      </div>
+      <div class="product-grid__items">
+        <a href="collection.html" class="product-card fade-in">
+          <div class="product-card__image">
+            <img src="img/tin-refresh.svg" alt="Refresh Ritual tin" class="product-card__img">
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__name">Refresh Ritual</span>
+            <span class="product-card__price">$34</span>
+          </div>
+          <p class="product-card__tag">Morning</p>
+        </a>
+        <a href="collection.html" class="product-card fade-in">
+          <div class="product-card__image">
+            <img src="img/tin-daily.svg" alt="Daily Ritual tin" class="product-card__img">
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__name">Daily Ritual</span>
+            <span class="product-card__price">$32</span>
+          </div>
+          <p class="product-card__tag">Anytime</p>
+        </a>
+        <a href="collection.html" class="product-card fade-in">
+          <div class="product-card__image">
+            <img src="img/tin-evening.svg" alt="Evening Ritual tin" class="product-card__img">
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__name">Evening Ritual</span>
+            <span class="product-card__price">$36</span>
+          </div>
+          <p class="product-card__tag">Night</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <p class="footer__brand-name">Chinara Botanica</p>
+          <p class="footer__brand-desc">A formulation house creating botanical compositions for daily rituals.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Shop</h4>
+          <a href="collection.html">All Rituals</a>
+          <a href="product.html">Study Ritual</a>
+          <a href="collection.html">The Full Day Set</a>
+        </div>
+        <div class="footer__col">
+          <h4>About</h4>
+          <a href="about.html">Our Story</a>
+          <a href="about.html">Philosophy</a>
+          <a href="about.html">Process</a>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Contact</a>
+          <a href="#">Press</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Chinara Botanica. All rights reserved.</span>
+        <span>Botanical compositions for daily rituals</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
