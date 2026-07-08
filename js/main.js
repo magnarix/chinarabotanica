@@ -1,5 +1,6 @@
 /* ===================================
-   Chinara Botanica — Main JS
+   Chinara Botanica — MARIS
+   Main JS
    =================================== */
 
 (function () {
@@ -103,92 +104,6 @@
     });
   }
 
-  // --- Collection dual filter (Time of Day + Feeling) ---
-  const collGrid = document.getElementById('collectionGrid');
-  const collEmpty = document.getElementById('collectionEmpty');
-  const clearFiltersBtn = document.getElementById('clearFilters');
-  const timeFilters = document.querySelectorAll('#filterTime .coll-filter');
-  const feelingFilters = document.querySelectorAll('#filterFeeling .coll-filter');
-  const collCards = collGrid ? collGrid.querySelectorAll('.coll-card') : [];
-
-  let activeTime = 'all';
-  let activeFeeling = 'all';
-
-  function applyCollectionFilters() {
-    let visibleCount = 0;
-
-    collCards.forEach((card) => {
-      const matchTime = activeTime === 'all' || card.dataset.time === activeTime;
-      const matchFeeling = activeFeeling === 'all' || card.dataset.feeling === activeFeeling;
-
-      if (matchTime && matchFeeling) {
-        card.classList.remove('hidden');
-        visibleCount++;
-      } else {
-        card.classList.add('hidden');
-      }
-    });
-
-    if (collEmpty) {
-      if (visibleCount === 0) {
-        collEmpty.classList.add('show');
-      } else {
-        collEmpty.classList.remove('show');
-      }
-    }
-  }
-
-  timeFilters.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      timeFilters.forEach((b) => b.classList.remove('active'));
-      btn.classList.add('active');
-      activeTime = btn.dataset.time;
-      applyCollectionFilters();
-    });
-  });
-
-  feelingFilters.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      feelingFilters.forEach((b) => b.classList.remove('active'));
-      btn.classList.add('active');
-      activeFeeling = btn.dataset.feeling;
-      applyCollectionFilters();
-    });
-  });
-
-  if (clearFiltersBtn) {
-    clearFiltersBtn.addEventListener('click', () => {
-      activeTime = 'all';
-      activeFeeling = 'all';
-      timeFilters.forEach((b) => b.classList.remove('active'));
-      feelingFilters.forEach((b) => b.classList.remove('active'));
-      timeFilters[0].classList.add('active');
-      feelingFilters[0].classList.add('active');
-      applyCollectionFilters();
-    });
-  }
-
-  // Legacy filter support (for any pages still using .filter-btn)
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const productCards = document.querySelectorAll('.collection__grid .product-card');
-
-  filterBtns.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach((b) => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const filter = btn.dataset.filter;
-
-      productCards.forEach((card) => {
-        if (filter === 'all' || card.dataset.category === filter) {
-          card.style.display = '';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    });
-  });
-
   // --- Subtle parallax on hero ambient ---
   const heroAmbient = document.querySelector('.hero__ambient');
   if (heroAmbient) {
@@ -202,13 +117,13 @@
     });
   }
 
-  // --- "Add to Ritual" button confirmation ---
+  // --- "Add to Cart" button confirmation ---
   function createConfirmation() {
     let el = document.querySelector('.pdp-hero__confirmation');
     if (!el) {
       el = document.createElement('div');
       el.className = 'pdp-hero__confirmation';
-      el.textContent = 'Added to your ritual';
+      el.textContent = 'Added to your cart';
       document.body.appendChild(el);
     }
     return el;
@@ -231,8 +146,8 @@
     }, 2400);
   }
 
-  const addBtn = document.getElementById('addToRitual');
-  const addBtnBottom = document.getElementById('addToRitualBottom');
+  const addBtn = document.getElementById('addToCart');
+  const addBtnBottom = document.getElementById('addToCartBottom');
 
   if (addBtn) addBtn.addEventListener('click', showAddConfirmation);
   if (addBtnBottom) addBtnBottom.addEventListener('click', showAddConfirmation);

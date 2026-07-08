@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journal — Chinara Botanica</title>
+  <meta name="description" content="The Chinara Botanica journal — quiet notes on marine botanicals, fucoxanthin, thoughtful formulation, and the daily ritual behind MARIS.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-journal">
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo"><span>Chinara</span> Botanica</a>
+      <nav class="header__nav">
+        <a href="index.html">Home</a>
+        <a href="product.html">MARIS</a>
+        <a href="about.html">About</a>
+        <a href="journal.html" class="active">Journal</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="#" class="header__cart">Cart <span class="header__cart-count">0</span></a>
+      </nav>
+      <button class="header__menu-btn" id="menuBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="product.html">MARIS</a>
+    <a href="about.html">About</a>
+    <a href="journal.html" class="active">Journal</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Journal Hero -->
+  <section class="coll-hero">
+    <div class="container">
+      <div class="coll-hero__inner">
+        <div class="coll-hero__line fade-up delay-1"></div>
+        <p class="label fade-up delay-2">Journal</p>
+        <h1 class="fade-up delay-3">Notes &amp; observations</h1>
+        <p class="coll-hero__desc fade-up delay-4">A slow, occasional journal — on marine botanicals, the thinking behind MARIS, and the quiet craft of a daily ritual. No trends. No noise.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journal List -->
+  <section class="section coll-grid-section">
+    <div class="container">
+      <div class="journal-list">
+
+        <article class="journal-entry fade-in">
+          <div class="journal-entry__meta">
+            <span class="journal-entry__date">June 2026</span>
+            <span class="journal-entry__cat">Philosophy</span>
+          </div>
+          <div class="journal-entry__body">
+            <h2 class="journal-entry__title">The case for a single oil</h2>
+            <p class="journal-entry__excerpt">Why we launched with one product instead of twelve. On restraint as a design principle, and the quiet luxury of owning fewer, better things.</p>
+            <a href="#" class="journal-entry__more">Read the note</a>
+          </div>
+        </article>
+
+        <article class="journal-entry fade-in">
+          <div class="journal-entry__meta">
+            <span class="journal-entry__date">May 2026</span>
+            <span class="journal-entry__cat">Ingredients</span>
+          </div>
+          <div class="journal-entry__body">
+            <h2 class="journal-entry__title">Meet fucoxanthin</h2>
+            <p class="journal-entry__excerpt">The golden carotenoid at the heart of MARIS — where it grows, why brown algae makes it, and how it gives the oil its natural colour.</p>
+            <a href="collection.html" class="journal-entry__more">Read the note</a>
+          </div>
+        </article>
+
+        <article class="journal-entry fade-in">
+          <div class="journal-entry__meta">
+            <span class="journal-entry__date">April 2026</span>
+            <span class="journal-entry__cat">Science</span>
+          </div>
+          <div class="journal-entry__body">
+            <h2 class="journal-entry__title">Notes from the laboratory</h2>
+            <p class="journal-entry__excerpt">What years of exploring the chemistry of brown algae taught me about patience, restraint, and choosing ingredients you can actually explain.</p>
+            <a href="collection.html" class="journal-entry__more">Read the note</a>
+          </div>
+        </article>
+
+        <article class="journal-entry fade-in">
+          <div class="journal-entry__meta">
+            <span class="journal-entry__date">March 2026</span>
+            <span class="journal-entry__cat">Ritual</span>
+          </div>
+          <div class="journal-entry__body">
+            <h2 class="journal-entry__title">Where an oil belongs</h2>
+            <p class="journal-entry__excerpt">How to place a facial oil in a considered routine, morning or night — and why the last step is often the one that matters most.</p>
+            <a href="#" class="journal-entry__more">Read the note</a>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="journal-note fade-in">The journal is just beginning. New notes arrive slowly, when there is something worth saying. To be told when they do, join <a href="#signup" class="journal-entry__more" style="text-transform:none;letter-spacing:0;font-size:0.9rem;">The MARIS Letter</a> below.</p>
+    </div>
+  </section>
+
+  <!-- Email Signup -->
+  <section class="section section--large signup" id="signup">
+    <div class="container container--narrow fade-in">
+      <p class="label">Stay Close</p>
+      <h2>The MARIS Letter</h2>
+      <p class="signup__text">Occasional notes on marine botanicals, the making of the oil, and the quieter side of a skincare ritual. No noise.</p>
+      <form class="signup__form" onsubmit="event.preventDefault();">
+        <input type="email" class="signup__input" placeholder="Your email address" required>
+        <button type="submit" class="signup__submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <p class="footer__brand-name">Chinara Botanica</p>
+          <p class="footer__brand-desc">A marine botanical skincare house. Science from the ocean, care for your skin.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Shop</h4>
+          <a href="product.html">MARIS Marine Facial Oil</a>
+          <a href="collection.html">The Science</a>
+          <a href="product.html">How to Use</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="journal.html">Journal</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <a href="contact.html">Contact</a>
+          <a href="#">Instagram</a>
+          <a href="#">Press</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Chinara Botanica. All rights reserved.</span>
+        <span>Science from the ocean. Care for your skin.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

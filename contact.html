@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Chinara Botanica</title>
+  <meta name="description" content="Get in touch with Chinara Botanica. Questions about MARIS, your order, press, or wholesale — we read every message ourselves.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-contact">
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo"><span>Chinara</span> Botanica</a>
+      <nav class="header__nav">
+        <a href="index.html">Home</a>
+        <a href="product.html">MARIS</a>
+        <a href="about.html">About</a>
+        <a href="journal.html">Journal</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="#" class="header__cart">Cart <span class="header__cart-count">0</span></a>
+      </nav>
+      <button class="header__menu-btn" id="menuBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="product.html">MARIS</a>
+    <a href="about.html">About</a>
+    <a href="journal.html">Journal</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+
+  <!-- Contact Hero -->
+  <section class="coll-hero">
+    <div class="container">
+      <div class="coll-hero__inner">
+        <div class="coll-hero__line fade-up delay-1"></div>
+        <p class="label fade-up delay-2">Contact</p>
+        <h1 class="fade-up delay-3">Get in touch</h1>
+        <p class="coll-hero__desc fade-up delay-4">A small house, and a real person at the other end. Ask us anything about MARIS, your order, or the science behind the oil — we read every message ourselves.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Body -->
+  <section class="section coll-grid-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Form -->
+        <form class="contact-form fade-in" id="contactForm">
+          <div class="contact-field">
+            <label for="cf-name">Your name</label>
+            <input class="contact-input" type="text" id="cf-name" name="name" placeholder="First and last name" required>
+          </div>
+          <div class="contact-field">
+            <label for="cf-email">Email</label>
+            <input class="contact-input" type="email" id="cf-email" name="email" placeholder="you@email.com" required>
+          </div>
+          <div class="contact-field">
+            <label for="cf-subject">Subject</label>
+            <input class="contact-input" type="text" id="cf-subject" name="subject" placeholder="How can we help?">
+          </div>
+          <div class="contact-field">
+            <label for="cf-message">Message</label>
+            <textarea class="contact-textarea" id="cf-message" name="message" placeholder="Tell us a little more…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--marine">Send Message</button>
+          <p id="contactThanks" style="display:none; font-family:var(--font-serif); font-size:1.1rem; color:var(--color-marine); line-height:1.6;">Thank you — your message is on its way. We'll reply within two working days.</p>
+        </form>
+
+        <!-- Details -->
+        <div class="contact-details fade-in">
+          <dl>
+            <div class="contact-detail">
+              <dt>General &amp; Orders</dt>
+              <dd>
+                <a href="mailto:hello@chinarabotanica.com">hello@chinarabotanica.com</a>
+                <span>Questions about MARIS or your order</span>
+              </dd>
+            </div>
+            <div class="contact-detail">
+              <dt>Press &amp; Partnerships</dt>
+              <dd>
+                <a href="mailto:press@chinarabotanica.com">press@chinarabotanica.com</a>
+                <span>Media, wholesale, and collaborations</span>
+              </dd>
+            </div>
+            <div class="contact-detail">
+              <dt>Response Time</dt>
+              <dd>
+                Within two working days
+                <span>Monday to Friday, replied by hand</span>
+              </dd>
+            </div>
+            <div class="contact-detail">
+              <dt>Follow</dt>
+              <dd>
+                <a href="#">Instagram</a>
+                <span>@chinarabotanica</span>
+              </dd>
+            </div>
+          </dl>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Quiet FAQ nudge -->
+  <section class="section section--large" style="text-align:center; background-color: var(--color-bg-warm);">
+    <div class="container container--narrow fade-in">
+      <div class="marine-rule"></div>
+      <h2 style="margin: var(--space-md) 0 var(--space-sm); font-weight:300;">Looking for a quick answer?</h2>
+      <p style="color: var(--color-text-light); max-width: 440px; margin: 0 auto var(--space-lg); line-height:1.8;">Many questions about ingredients, use, and orders are answered on our FAQ.</p>
+      <a href="faq.html" class="btn btn--outline">Read the FAQ</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <p class="footer__brand-name">Chinara Botanica</p>
+          <p class="footer__brand-desc">A marine botanical skincare house. Science from the ocean, care for your skin.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Shop</h4>
+          <a href="product.html">MARIS Marine Facial Oil</a>
+          <a href="collection.html">The Science</a>
+          <a href="product.html">How to Use</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="journal.html">Journal</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <a href="contact.html">Contact</a>
+          <a href="#">Instagram</a>
+          <a href="#">Press</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Chinara Botanica. All rights reserved.</span>
+        <span>Science from the ocean. Care for your skin.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      var form = document.getElementById('contactForm');
+      if (!form) return;
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var thanks = document.getElementById('contactThanks');
+        form.querySelectorAll('.contact-field, button[type="submit"]').forEach(function (el) {
+          el.style.display = 'none';
+        });
+        if (thanks) thanks.style.display = 'block';
+      });
+    })();
+  </script>
+</body>
+</html>

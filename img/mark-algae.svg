@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <g stroke="#2B5A54" stroke-width="1.6" fill="none" stroke-linecap="round">
+    <!-- central stipe -->
+    <path d="M60 104 C58 78 62 60 60 40 C59 28 61 20 60 12"/>
+    <!-- fronds -->
+    <path d="M60 40 C44 36 34 24 30 12"/>
+    <path d="M60 52 C76 48 86 36 90 24"/>
+    <path d="M60 66 C46 62 37 52 33 40"/>
+    <path d="M60 78 C74 74 83 64 87 52"/>
+  </g>
+  <!-- air bladders (characteristic of brown algae) -->
+  <g fill="#A6884F" opacity="0.6">
+    <circle cx="30" cy="12" r="4"/>
+    <circle cx="90" cy="24" r="4"/>
+    <circle cx="33" cy="40" r="3.4"/>
+    <circle cx="87" cy="52" r="3.4"/>
+    <circle cx="60" cy="12" r="3.4"/>
+  </g>
+</svg>

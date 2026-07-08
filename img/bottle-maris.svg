@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" fill="none">
+  <rect width="400" height="520" fill="#F1F0EA"/>
+  <ellipse cx="200" cy="270" rx="185" ry="205" fill="#E4EDE9" opacity="0.55"/>
+
+  <!-- soft floor shadow -->
+  <ellipse cx="200" cy="452" rx="66" ry="9" fill="#CFCEC4" opacity="0.5"/>
+
+  <!-- Dropper cap -->
+  <rect x="176" y="70" width="48" height="46" rx="3" fill="#20423C"/>
+  <rect x="176" y="70" width="48" height="10" rx="3" fill="#2B5A54"/>
+  <rect x="180" y="74" width="6" height="38" rx="3" fill="#31655D" opacity="0.6"/>
+  <!-- collar -->
+  <rect x="168" y="114" width="64" height="14" rx="2" fill="#DAD4CB"/>
+  <rect x="168" y="114" width="64" height="4" rx="2" fill="#E7E2DA"/>
+
+  <!-- Bottle body — frosted amber glass -->
+  <path d="M164 128 h72 a10 10 0 0 1 10 10 v260 a18 18 0 0 1 -18 18 h-56 a18 18 0 0 1 -18 -18 v-260 a10 10 0 0 1 10 -10 z" fill="#C79A57"/>
+  <path d="M164 128 h72 a10 10 0 0 1 10 10 v260 a18 18 0 0 1 -18 18 h-56 a18 18 0 0 1 -18 -18 v-260 a10 10 0 0 1 10 -10 z" fill="url(#oilShine)" opacity="0.9"/>
+
+  <!-- glass highlight -->
+  <rect x="176" y="150" width="12" height="240" rx="6" fill="#FFFFFF" opacity="0.18"/>
+  <rect x="222" y="170" width="6" height="200" rx="3" fill="#7A5C2E" opacity="0.15"/>
+
+  <!-- Frosted label panel -->
+  <rect x="158" y="250" width="84" height="120" rx="2" fill="#F4F2EC" opacity="0.94"/>
+  <rect x="158" y="250" width="84" height="120" rx="2" stroke="#E0DBD1" stroke-width="0.5"/>
+
+  <!-- Marine accent hairline -->
+  <rect x="176" y="268" width="48" height="1.5" fill="#2B5A54"/>
+
+  <text x="200" y="292" text-anchor="middle" font-family="'Helvetica Neue', sans-serif" font-size="8" fill="#8A928E" letter-spacing="0.24em">CHINARA BOTANICA</text>
+  <text x="200" y="322" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#1B2A28" letter-spacing="0.16em">MARIS</text>
+  <text x="200" y="340" text-anchor="middle" font-family="'Helvetica Neue', sans-serif" font-size="7" fill="#8A928E" letter-spacing="0.18em">MARINE FACIAL OIL</text>
+
+  <!-- Brown-algae frond mark -->
+  <g transform="translate(200, 356)" stroke="#A6884F" stroke-width="0.8" fill="none" opacity="0.7">
+    <path d="M0 8 C0 2 0 -4 0 -9"/>
+    <path d="M0 -1 C-6 -3 -9 -7 -10 -12"/>
+    <path d="M0 -1 C6 -3 9 -7 10 -12"/>
+    <path d="M0 -5 C-4 -7 -6 -10 -6 -13"/>
+    <path d="M0 -5 C4 -7 6 -10 6 -13"/>
+  </g>
+
+  <defs>
+    <linearGradient id="oilShine" x1="0" y1="128" x2="0" y2="406" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#D9B472"/>
+      <stop offset="45%" stop-color="#C79A57"/>
+      <stop offset="100%" stop-color="#A87E3E"/>
+    </linearGradient>
+  </defs>
+</svg>

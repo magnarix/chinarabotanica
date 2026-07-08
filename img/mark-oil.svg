@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <radialGradient id="markOil" cx="0.4" cy="0.35" r="0.8">
+      <stop offset="0%" stop-color="#E4C486"/>
+      <stop offset="60%" stop-color="#C79A57"/>
+      <stop offset="100%" stop-color="#A87E3E"/>
+    </radialGradient>
+  </defs>
+  <!-- teardrop of oil -->
+  <path d="M60 20 C74 44 86 60 86 76 a26 26 0 0 1 -52 0 C34 60 46 44 60 20 Z" fill="url(#markOil)"/>
+  <ellipse cx="52" cy="66" rx="8" ry="5" fill="#FFFFFF" opacity="0.4"/>
+  <path d="M60 20 C74 44 86 60 86 76 a26 26 0 0 1 -52 0 C34 60 46 44 60 20 Z" stroke="#A87E3E" stroke-width="0.6" opacity="0.5" fill="none"/>
+</svg>

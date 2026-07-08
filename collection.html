@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All Rituals — Chinara Botanica</title>
-  <meta name="description" content="Explore the full collection of botanical compositions — five rituals designed for every moment of your day.">
+  <title>The Science — Marine Botanicals · Chinara Botanica</title>
+  <meta name="description" content="The science behind MARIS — brown algae, marine botanicals, and fucoxanthin, born of a long fascination with the remarkable chemistry of the sea and composed into a single facial oil.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -18,8 +18,11 @@
       <a href="index.html" class="header__logo"><span>Chinara</span> Botanica</a>
       <nav class="header__nav">
         <a href="index.html">Home</a>
-        <a href="collection.html" class="active">Rituals</a>
+        <a href="product.html">MARIS</a>
         <a href="about.html">About</a>
+        <a href="journal.html">Journal</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
         <a href="#" class="header__cart">Cart <span class="header__cart-count">0</span></a>
       </nav>
       <button class="header__menu-btn" id="menuBtn" aria-label="Open menu">
@@ -31,207 +34,112 @@
   <!-- Mobile Nav -->
   <div class="mobile-nav" id="mobileNav">
     <a href="index.html">Home</a>
-    <a href="collection.html">Rituals</a>
-    <a href="product.html">Study Ritual</a>
+    <a href="product.html">MARIS</a>
     <a href="about.html">About</a>
+    <a href="journal.html">Journal</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
   </div>
 
-  <!-- Collection Hero -->
+  <!-- Science Hero -->
   <section class="coll-hero">
     <div class="container">
       <div class="coll-hero__inner">
         <div class="coll-hero__line fade-up delay-1"></div>
-        <p class="label fade-up delay-2">The Collection</p>
-        <h1 class="fade-up delay-3">All Rituals</h1>
-        <p class="coll-hero__desc fade-up delay-4">Five botanical compositions, each designed for a distinct moment in your day. Together, they form a complete system for living with intention.</p>
+        <p class="label fade-up delay-2">The Science</p>
+        <h1 class="fade-up delay-3">Marine botanicals</h1>
+        <p class="coll-hero__desc fade-up delay-4">MARIS is built on a simple idea: the plants that survive the sea know something about resilience. Here is the botanical at its centre, and the thinking behind the oil.</p>
         <div class="coll-hero__count fade-up delay-5">
-          <span>5 compositions</span>
+          <span>One marine botanical</span>
           <span class="coll-hero__count-sep"></span>
-          <span>1 intentional day</span>
+          <span>Research-led</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Filters -->
-  <section class="coll-filters">
+  <!-- The Research (quiet founder science) -->
+  <section class="pdp-solution">
+    <div class="pdp-solution__grid">
+      <div class="pdp-solution__visual fade-in">
+        <img src="img/scene-lab.svg" alt="A quiet formulation bench with a flask of marine extract, a dropper, and an algae specimen" class="pdp-solution__img">
+      </div>
+      <div class="pdp-solution__content fade-in">
+        <p class="science-note">Where it began</p>
+        <h2 style="margin-top: var(--space-md);">From the laboratory<br>to the bottle</h2>
+        <p class="pdp-solution__desc">MARIS is inspired by doctoral research into the remarkable chemistry of brown algae. The pigment at the centre of that work — fucoxanthin — is the very marine ingredient in MARIS today.</p>
+        <p class="pdp-solution__desc">That research never became a claim. It became a <em>discipline</em> — a way of choosing ingredients carefully, and of leaving out anything that does not belong.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marine Actives Showcase -->
+  <section class="section section--large">
     <div class="container">
-      <div class="coll-filters__inner fade-in">
-        <div class="coll-filters__group">
-          <span class="coll-filters__label">Time of Day</span>
-          <div class="coll-filters__buttons" id="filterTime">
-            <button class="coll-filter active" data-time="all">All</button>
-            <button class="coll-filter" data-time="morning">Morning</button>
-            <button class="coll-filter" data-time="anytime">Anytime</button>
-            <button class="coll-filter" data-time="afternoon">Afternoon</button>
-            <button class="coll-filter" data-time="after-meal">After Meal</button>
-            <button class="coll-filter" data-time="night">Night</button>
-          </div>
+      <div class="trio__header fade-in">
+        <p class="label">Inside the Oil</p>
+        <h2>What MARIS is made of</h2>
+      </div>
+      <div class="sci-grid fade-in">
+        <div class="sci-card">
+          <div class="sci-card__mark"><img src="img/mark-algae.svg" alt=""></div>
+          <span class="sci-card__latin">from Phaeophyceae</span>
+          <h3>Fucoxanthin</h3>
+          <p>The marine carotenoid at the heart of MARIS. A golden pigment from brown algae, and the focus of years of quiet exploration behind the oil.</p>
         </div>
-        <div class="coll-filters__sep"></div>
-        <div class="coll-filters__group">
-          <span class="coll-filters__label">Feeling</span>
-          <div class="coll-filters__buttons" id="filterFeeling">
-            <button class="coll-filter active" data-feeling="all">All</button>
-            <button class="coll-filter" data-feeling="reset">Reset</button>
-            <button class="coll-filter" data-feeling="balance">Balance</button>
-            <button class="coll-filter" data-feeling="focus">Focus</button>
-            <button class="coll-filter" data-feeling="satisfy">Satisfy</button>
-            <button class="coll-filter" data-feeling="unwind">Unwind</button>
-          </div>
+        <div class="sci-card">
+          <div class="sci-card__mark"><img src="img/mark-oil.svg" alt=""></div>
+          <span class="sci-card__latin">Cold-pressed</span>
+          <h3>Botanical Oils</h3>
+          <p>Squalane, jojoba, and rosehip seed oil — light, skin-close oils that carry the fucoxanthin and give MARIS its weightless, dry-touch feel.</p>
+        </div>
+        <div class="sci-card">
+          <div class="sci-card__mark"><img src="img/mark-vitamin.svg" alt=""></div>
+          <span class="sci-card__latin">Tocopherol</span>
+          <h3>Vitamin E</h3>
+          <p>A little Vitamin E helps keep the delicate oils fresh and stable. Nothing else is added — no fragrance, no essential oils.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Product Grid -->
-  <section class="coll-grid-section">
-    <div class="container">
-      <div class="coll-grid" id="collectionGrid">
-
-        <!-- Refresh Ritual -->
-        <a href="collection.html" class="coll-card fade-in" data-time="morning" data-feeling="reset">
-          <div class="coll-card__strip" style="background-color: var(--color-refresh);"></div>
-          <div class="coll-card__image">
-            <img src="img/tin-refresh.svg" alt="Refresh Ritual tin" class="coll-card__img">
-            <div class="coll-card__overlay">
-              <p class="coll-card__overlay-desc">A bright awakening. Citrus and herb to greet the day with clarity and presence.</p>
-              <span class="coll-card__overlay-cta">View Ritual</span>
-            </div>
-          </div>
-          <div class="coll-card__body">
-            <div class="coll-card__meta">
-              <span class="coll-card__name">Refresh Ritual</span>
-              <span class="coll-card__price">$34</span>
-            </div>
-            <div class="coll-card__tags">
-              <span class="coll-card__tag">Morning</span>
-              <span class="coll-card__tag-sep"></span>
-              <span class="coll-card__tag">Reset</span>
-            </div>
-            <p class="coll-card__notes">Citrus peel, peppermint, lemongrass</p>
-          </div>
-        </a>
-
-        <!-- Daily Ritual -->
-        <a href="collection.html" class="coll-card fade-in" data-time="anytime" data-feeling="balance">
-          <div class="coll-card__strip" style="background-color: var(--color-daily);"></div>
-          <div class="coll-card__image">
-            <img src="img/tin-daily.svg" alt="Daily Ritual tin" class="coll-card__img">
-            <div class="coll-card__overlay">
-              <p class="coll-card__overlay-desc">Your constant companion. Light, balanced, effortless — for any moment that calls for calm.</p>
-              <span class="coll-card__overlay-cta">View Ritual</span>
-            </div>
-          </div>
-          <div class="coll-card__body">
-            <div class="coll-card__meta">
-              <span class="coll-card__name">Daily Ritual</span>
-              <span class="coll-card__price">$32</span>
-            </div>
-            <div class="coll-card__tags">
-              <span class="coll-card__tag">Anytime</span>
-              <span class="coll-card__tag-sep"></span>
-              <span class="coll-card__tag">Balance</span>
-            </div>
-            <p class="coll-card__notes">Sencha, chamomile, oat straw</p>
-          </div>
-        </a>
-
-        <!-- Study Ritual -->
-        <a href="product.html" class="coll-card fade-in" data-time="afternoon" data-feeling="focus">
-          <div class="coll-card__strip" style="background-color: var(--color-study);"></div>
-          <div class="coll-card__image">
-            <img src="img/tin-study.svg" alt="Study Ritual tin" class="coll-card__img">
-            <div class="coll-card__overlay">
-              <p class="coll-card__overlay-desc">Deep focus. Earthy roasted notes for sustained, quiet attention without the crash.</p>
-              <span class="coll-card__overlay-cta">View Ritual</span>
-            </div>
-          </div>
-          <div class="coll-card__body">
-            <div class="coll-card__meta">
-              <span class="coll-card__name">Study Ritual</span>
-              <span class="coll-card__price">$38</span>
-            </div>
-            <div class="coll-card__tags">
-              <span class="coll-card__tag">Afternoon</span>
-              <span class="coll-card__tag-sep"></span>
-              <span class="coll-card__tag">Focus</span>
-            </div>
-            <p class="coll-card__notes">Roasted green tea, ginkgo leaf, rosemary</p>
-          </div>
-        </a>
-
-        <!-- Post-Meal Ritual -->
-        <a href="collection.html" class="coll-card fade-in" data-time="after-meal" data-feeling="satisfy">
-          <div class="coll-card__strip" style="background-color: var(--color-postmeal);"></div>
-          <div class="coll-card__image">
-            <img src="img/tin-postmeal.svg" alt="Post-Meal Ritual tin" class="coll-card__img">
-            <div class="coll-card__overlay">
-              <p class="coll-card__overlay-desc">A gentle close to the table. Warm and settling, with spiced comfort that lingers softly.</p>
-              <span class="coll-card__overlay-cta">View Ritual</span>
-            </div>
-          </div>
-          <div class="coll-card__body">
-            <div class="coll-card__meta">
-              <span class="coll-card__name">Post-Meal Ritual</span>
-              <span class="coll-card__price">$34</span>
-            </div>
-            <div class="coll-card__tags">
-              <span class="coll-card__tag">After Meal</span>
-              <span class="coll-card__tag-sep"></span>
-              <span class="coll-card__tag">Satisfy</span>
-            </div>
-            <p class="coll-card__notes">Cinnamon bark, fennel seed, liquorice root</p>
-          </div>
-        </a>
-
-        <!-- Evening Ritual -->
-        <a href="collection.html" class="coll-card fade-in" data-time="night" data-feeling="unwind">
-          <div class="coll-card__strip" style="background-color: var(--color-evening);"></div>
-          <div class="coll-card__image">
-            <img src="img/tin-evening.svg" alt="Evening Ritual tin" class="coll-card__img">
-            <div class="coll-card__overlay">
-              <p class="coll-card__overlay-desc">Wind down softly. Floral calm and golden warmth for the closing hours of the day.</p>
-              <span class="coll-card__overlay-cta">View Ritual</span>
-            </div>
-          </div>
-          <div class="coll-card__body">
-            <div class="coll-card__meta">
-              <span class="coll-card__name">Evening Ritual</span>
-              <span class="coll-card__price">$36</span>
-            </div>
-            <div class="coll-card__tags">
-              <span class="coll-card__tag">Night</span>
-              <span class="coll-card__tag-sep"></span>
-              <span class="coll-card__tag">Unwind</span>
-            </div>
-            <p class="coll-card__notes">Chrysanthemum, lavender, honey bush</p>
-          </div>
-        </a>
-
-      </div>
-
-      <!-- No results message -->
-      <div class="coll-empty" id="collectionEmpty">
-        <p class="coll-empty__text">No rituals match your current filters.</p>
-        <button class="btn btn--outline" id="clearFilters">View All Rituals</button>
+  <!-- Molecular Figure / Credentials -->
+  <section class="sci-credentials" style="background-color: var(--color-bg-warm);">
+    <div class="container container--narrow">
+      <div class="sci-credentials__inner fade-in">
+        <div class="marine-rule"></div>
+        <p class="sci-credentials__statement">Brown algae produces fucoxanthin, a golden marine carotenoid — the antioxidant pigment that colours the seaweed, and the molecule that first held my attention in the laboratory.</p>
+        <img src="img/figure-molecule.svg" alt="An abstract figure of fucoxanthin, a marine carotenoid from brown algae" style="max-width: 520px; width: 100%; margin: var(--space-md) auto 0;">
+        <p class="figure-caption">Fucoxanthin — a marine carotenoid. Illustrative, not to scale.</p>
       </div>
     </div>
   </section>
 
-  <!-- The Full Day Set -->
-  <section class="coll-set">
+  <!-- How marine botanicals are treated (care, no claims) -->
+  <section class="pdp-experience">
     <div class="container">
-      <div class="coll-set__inner fade-in">
-        <div class="coll-set__visual">
-          <img src="img/set-fullday.svg" alt="The Full Day Set — all five ritual tins" class="coll-set__img">
+      <div class="pdp-experience__header fade-in">
+        <p class="label">Our Standard</p>
+        <h2>How we work with the sea</h2>
+      </div>
+      <div class="pdp-experience__stages">
+        <div class="pdp-experience__stage fade-in">
+          <div class="pdp-experience__stage-number">01</div>
+          <div class="pdp-experience__stage-line"></div>
+          <h3>Sourced responsibly</h3>
+          <p>The marine botanical is obtained from managed, traceable sources — never at the cost of the coastline it comes from.</p>
         </div>
-        <div class="coll-set__content">
-          <p class="label">Complete Collection</p>
-          <h2>The Full Day Set</h2>
-          <p class="coll-set__price">$160 <span class="coll-set__save">save $30</span></p>
-          <p class="coll-set__desc">All five rituals in a single presentation box. A complete system for moving through your day with intention.</p>
-          <button class="btn btn--primary">Add Set to Ritual</button>
+        <div class="pdp-experience__stage fade-in">
+          <div class="pdp-experience__stage-number">02</div>
+          <div class="pdp-experience__stage-line"></div>
+          <h3>Formulated plainly</h3>
+          <p>A short, legible ingredient list. Vegan and cruelty-free. Nothing added for volume, colour, or marketing.</p>
+        </div>
+        <div class="pdp-experience__stage fade-in">
+          <div class="pdp-experience__stage-number">03</div>
+          <div class="pdp-experience__stage-line"></div>
+          <h3>Described honestly</h3>
+          <p>We speak about how MARIS feels and finishes — not about what it treats. Care, offered without claims.</p>
         </div>
       </div>
     </div>
@@ -243,10 +151,20 @@
       <div class="coll-philosophy__inner fade-in">
         <div class="coll-philosophy__line"></div>
         <p class="label">Our Approach</p>
-        <blockquote class="coll-philosophy__quote">"Each ritual is a composition — not a formula, but a harmony."</blockquote>
-        <p class="coll-philosophy__text">We source single-origin botanicals from growers who understand that great ingredients need patience, not intervention.</p>
+        <blockquote class="coll-philosophy__quote">"Knowledge is the ingredient you cannot list."</blockquote>
+        <p class="coll-philosophy__text">The science sits underneath everything and asks for no attention. What reaches you is only a well-made oil — and skin that feels cared for.</p>
         <div class="coll-philosophy__line"></div>
       </div>
+    </div>
+  </section>
+
+  <!-- CTA back to product -->
+  <section class="section section--large" style="text-align:center;">
+    <div class="container container--narrow fade-in">
+      <p class="label">The Oil</p>
+      <h2 style="margin: var(--space-xs) 0 var(--space-md);">Meet MARIS</h2>
+      <p style="color: var(--color-text-light); max-width: 460px; margin: 0 auto var(--space-lg); line-height: 1.8;">Everything on this page lives inside a single 30 ml bottle. Weightless, quietly golden, and made to be worn.</p>
+      <a href="product.html" class="btn btn--marine">View MARIS · $92</a>
     </div>
   </section>
 
@@ -256,30 +174,30 @@
       <div class="footer__grid">
         <div class="footer__brand">
           <p class="footer__brand-name">Chinara Botanica</p>
-          <p class="footer__brand-desc">A formulation house creating botanical compositions for daily rituals.</p>
+          <p class="footer__brand-desc">A marine botanical skincare house. Science from the ocean, care for your skin.</p>
         </div>
         <div class="footer__col">
           <h4>Shop</h4>
-          <a href="collection.html">All Rituals</a>
-          <a href="product.html">Study Ritual</a>
-          <a href="collection.html">The Full Day Set</a>
+          <a href="product.html">MARIS Marine Facial Oil</a>
+          <a href="collection.html">The Science</a>
+          <a href="product.html">How to Use</a>
         </div>
         <div class="footer__col">
-          <h4>About</h4>
-          <a href="about.html">Our Story</a>
-          <a href="about.html">Philosophy</a>
-          <a href="about.html">Process</a>
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="journal.html">Journal</a>
+          <a href="faq.html">FAQ</a>
         </div>
         <div class="footer__col">
           <h4>Connect</h4>
+          <a href="contact.html">Contact</a>
           <a href="#">Instagram</a>
-          <a href="#">Contact</a>
           <a href="#">Press</a>
         </div>
       </div>
       <div class="footer__bottom">
         <span>&copy; 2026 Chinara Botanica. All rights reserved.</span>
-        <span>Botanical compositions for daily rituals</span>
+        <span>Science from the ocean. Care for your skin.</span>
       </div>
     </div>
   </footer>

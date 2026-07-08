@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#F1F0EA"/>
+  <rect width="800" height="600" fill="url(#labLight)" opacity="0.5"/>
+  <defs>
+    <radialGradient id="labLight" cx="0.28" cy="0.25" r="0.85">
+      <stop offset="0%" stop-color="#F6F4EE"/>
+      <stop offset="100%" stop-color="#E4EDE9"/>
+    </radialGradient>
+  </defs>
+
+  <!-- bench surface -->
+  <rect x="0" y="392" width="800" height="208" fill="#E8E3DC"/>
+  <line x1="0" y1="392" x2="800" y2="392" stroke="#DDD8D1" stroke-width="1"/>
+  <ellipse cx="400" cy="470" rx="320" ry="56" fill="#D6D0C8" opacity="0.28"/>
+
+  <!-- Erlenmeyer flask with marine extract -->
+  <g transform="translate(250, 250)">
+    <ellipse cx="0" cy="150" rx="70" ry="10" fill="#D6D0C8" opacity="0.4"/>
+    <path d="M-16 0 L-16 46 L-64 138 Q-66 146 -58 146 L58 146 Q66 146 64 138 L16 46 L16 0 Z"
+          fill="#F4F2EC" stroke="#D8D2CA" stroke-width="1.2" opacity="0.85"/>
+    <!-- liquid -->
+    <path d="M-49 108 L-58 146 Q-66 146 -58 146 L58 146 Q66 146 58 146 L49 108 Z" fill="#2B5A54" opacity="0.18"/>
+    <path d="M-49 108 Q0 118 49 108 L40 88 Q0 96 -40 88 Z" fill="#2B5A54" opacity="0.12"/>
+    <ellipse cx="0" cy="108" rx="49" ry="6" fill="#2B5A54" opacity="0.22"/>
+    <!-- neck rim -->
+    <rect x="-18" y="-4" width="36" height="6" rx="3" fill="#EDE9E3" stroke="#D8D2CA" stroke-width="0.5"/>
+    <!-- highlight -->
+    <rect x="-46" y="70" width="8" height="60" rx="4" fill="#FFFFFF" opacity="0.3"/>
+  </g>
+
+  <!-- Pipette / dropper, dispensing -->
+  <g transform="translate(470, 190) rotate(14)">
+    <rect x="-4" y="0" width="8" height="150" rx="4" fill="#EDE9E3" stroke="#D8D2CA" stroke-width="0.6"/>
+    <rect x="-4" y="0" width="8" height="60" rx="4" fill="#C79A57" opacity="0.55"/>
+    <path d="M-4 150 L0 164 L4 150 Z" fill="#EDE9E3" stroke="#D8D2CA" stroke-width="0.5"/>
+    <ellipse cx="0" cy="-14" rx="9" ry="16" fill="#20423C"/>
+    <!-- falling golden droplet -->
+    <circle cx="0" cy="184" r="4.5" fill="#C79A57"/>
+  </g>
+
+  <!-- glass beaker, right -->
+  <g transform="translate(560, 300)">
+    <ellipse cx="0" cy="98" rx="46" ry="8" fill="#D6D0C8" opacity="0.4"/>
+    <path d="M-42 0 L-38 92 Q0 100 38 92 L42 0" fill="#F4F2EC" stroke="#D8D2CA" stroke-width="1" opacity="0.8"/>
+    <ellipse cx="0" cy="0" rx="42" ry="8" fill="#F6F4EE" stroke="#D8D2CA" stroke-width="0.6"/>
+    <path d="M-40 52 Q0 60 40 52 L38 92 Q0 100 -38 92 Z" fill="#A6884F" opacity="0.16"/>
+    <ellipse cx="0" cy="52" rx="40" ry="6" fill="#A6884F" opacity="0.2"/>
+    <!-- graduation ticks -->
+    <g stroke="#B8B2AA" stroke-width="0.8">
+      <line x1="26" y1="30" x2="34" y2="30"/>
+      <line x1="27" y1="50" x2="35" y2="50"/>
+      <line x1="28" y1="70" x2="36" y2="70"/>
+    </g>
+  </g>
+
+  <!-- brown-algae specimen resting on bench -->
+  <g transform="translate(140, 452)" stroke="#A6884F" stroke-width="2.2" fill="none" opacity="0.55" stroke-linecap="round">
+    <path d="M-70 6 C-30 -8 30 4 92 -10"/>
+    <path d="M-40 0 C-36 -16 -28 -26 -18 -32"/>
+    <path d="M6 2 C12 -14 24 -22 38 -26"/>
+    <path d="M56 -4 C60 -18 70 -26 82 -30"/>
+  </g>
+  <g fill="#A6884F" opacity="0.5">
+    <circle cx="122" cy="442" r="3.2"/>
+    <circle cx="158" cy="426" r="3.2"/>
+  </g>
+
+  <!-- ambient glow -->
+  <circle cx="150" cy="150" r="120" fill="#F6F4EE" opacity="0.18"/>
+</svg>

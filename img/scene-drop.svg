@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#E4EDE9"/>
+  <rect width="800" height="600" fill="url(#dropLight)" opacity="0.7"/>
+  <defs>
+    <radialGradient id="dropLight" cx="0.5" cy="0.4" r="0.75">
+      <stop offset="0%" stop-color="#EFF4F2"/>
+      <stop offset="100%" stop-color="#D4E2DD"/>
+    </radialGradient>
+    <radialGradient id="oilDrop" cx="0.4" cy="0.35" r="0.8">
+      <stop offset="0%" stop-color="#E4C486"/>
+      <stop offset="55%" stop-color="#C79A57"/>
+      <stop offset="100%" stop-color="#A87E3E"/>
+    </radialGradient>
+  </defs>
+
+  <!-- concentric ripples -->
+  <g stroke="#2B5A54" fill="none" opacity="0.18">
+    <circle cx="400" cy="300" r="90"/>
+    <circle cx="400" cy="300" r="140"/>
+    <circle cx="400" cy="300" r="195"/>
+    <circle cx="400" cy="300" r="255"/>
+  </g>
+
+  <!-- suspended golden oil droplet, large -->
+  <circle cx="400" cy="300" r="70" fill="url(#oilDrop)"/>
+  <ellipse cx="380" cy="278" rx="22" ry="14" fill="#FFFFFF" opacity="0.35"/>
+  <circle cx="400" cy="300" r="70" stroke="#A87E3E" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- smaller satellite droplets -->
+  <circle cx="250" cy="200" r="20" fill="url(#oilDrop)" opacity="0.85"/>
+  <ellipse cx="244" cy="194" rx="7" ry="4" fill="#FFFFFF" opacity="0.35"/>
+
+  <circle cx="560" cy="410" r="28" fill="url(#oilDrop)" opacity="0.9"/>
+  <ellipse cx="551" cy="401" rx="9" ry="5" fill="#FFFFFF" opacity="0.35"/>
+
+  <circle cx="580" cy="180" r="13" fill="url(#oilDrop)" opacity="0.75"/>
+  <circle cx="240" cy="420" r="10" fill="url(#oilDrop)" opacity="0.7"/>
+
+  <!-- faint dropper hint, top -->
+  <g opacity="0.3">
+    <rect x="392" y="40" width="16" height="120" rx="8" fill="#2B5A54" opacity="0.2"/>
+    <path d="M400 160 l-9 20 a9 9 0 0 0 18 0 z" fill="#C79A57"/>
+  </g>
+</svg>

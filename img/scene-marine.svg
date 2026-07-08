@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#E4EDE9"/>
+  <rect width="800" height="600" fill="url(#seaLight)" opacity="0.7"/>
+  <defs>
+    <radialGradient id="seaLight" cx="0.32" cy="0.22" r="0.9">
+      <stop offset="0%" stop-color="#EEF4F1"/>
+      <stop offset="100%" stop-color="#D2E2DC"/>
+    </radialGradient>
+    <linearGradient id="deepWater" x1="0" y1="360" x2="0" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2B5A54" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#12312C" stop-opacity="0.22"/>
+    </linearGradient>
+  </defs>
+
+  <!-- deep water gradient at base -->
+  <rect x="0" y="360" width="800" height="240" fill="url(#deepWater)"/>
+
+  <!-- light shafts from the surface -->
+  <g opacity="0.25">
+    <path d="M180 0 L120 600 L200 600 L250 0 Z" fill="#FFFFFF" opacity="0.4"/>
+    <path d="M430 0 L400 600 L470 600 L500 0 Z" fill="#FFFFFF" opacity="0.3"/>
+    <path d="M640 0 L640 600 L700 600 L710 0 Z" fill="#FFFFFF" opacity="0.25"/>
+  </g>
+
+  <!-- kelp / brown-algae fronds rising from the seabed -->
+  <g stroke="#2B5A54" fill="none" opacity="0.55" stroke-linecap="round">
+    <path d="M150 600 C140 500 165 430 150 340 C138 270 158 210 150 150" stroke-width="3"/>
+    <path d="M150 340 C120 335 100 320 92 300" stroke-width="2"/>
+    <path d="M150 400 C182 392 205 372 214 348" stroke-width="2"/>
+    <path d="M150 260 C124 254 106 238 100 218" stroke-width="2"/>
+    <path d="M150 210 C176 204 196 186 204 164" stroke-width="2"/>
+  </g>
+
+  <g stroke="#3E6E62" fill="none" opacity="0.4" stroke-linecap="round">
+    <path d="M620 600 C632 510 610 440 626 360 C638 300 620 240 630 190" stroke-width="3"/>
+    <path d="M626 360 C656 352 678 334 686 312" stroke-width="2"/>
+    <path d="M628 280 C600 274 580 256 574 234" stroke-width="2"/>
+    <path d="M630 220 C658 214 680 196 688 174" stroke-width="2"/>
+  </g>
+
+  <!-- broad brown-algae blade, foreground -->
+  <g opacity="0.5">
+    <path d="M400 600 C388 480 420 400 400 300 C384 220 408 170 400 120" stroke="#A6884F" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M400 300 C350 292 322 250 340 210 C368 250 392 268 400 300 Z" fill="#A6884F" opacity="0.35"/>
+    <path d="M400 380 C452 372 484 328 470 286 C440 328 414 348 400 380 Z" fill="#A6884F" opacity="0.28"/>
+  </g>
+
+  <!-- drifting particles / bubbles -->
+  <g fill="#FFFFFF" opacity="0.5">
+    <circle cx="260" cy="180" r="3"/>
+    <circle cx="300" cy="140" r="2"/>
+    <circle cx="520" cy="220" r="2.5"/>
+    <circle cx="560" cy="170" r="1.8"/>
+    <circle cx="480" cy="120" r="2"/>
+    <circle cx="220" cy="250" r="1.6"/>
+  </g>
+
+  <!-- surface glimmer -->
+  <circle cx="240" cy="90" r="150" fill="#F4F8F6" opacity="0.2"/>
+</svg>

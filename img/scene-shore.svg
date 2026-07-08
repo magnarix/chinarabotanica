@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#EEF2EF"/>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F1F0EA"/>
+      <stop offset="100%" stop-color="#E6ECE8"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="300" x2="0" y2="440" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#B8D0C9"/>
+      <stop offset="100%" stop-color="#9DBDB4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect x="0" y="0" width="800" height="300" fill="url(#sky)"/>
+  <!-- low sun glow -->
+  <circle cx="560" cy="150" r="130" fill="#F6EFE1" opacity="0.5"/>
+  <circle cx="560" cy="150" r="60" fill="#EDD9B4" opacity="0.35"/>
+
+  <!-- sea -->
+  <rect x="0" y="300" width="800" height="140" fill="url(#water)"/>
+  <!-- horizon -->
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#8FB0A7" stroke-width="1" opacity="0.6"/>
+  <!-- sun reflection -->
+  <g fill="#F6EFE1" opacity="0.4">
+    <rect x="540" y="316" width="40" height="3" rx="1.5"/>
+    <rect x="530" y="332" width="60" height="3" rx="1.5"/>
+    <rect x="545" y="350" width="34" height="3" rx="1.5"/>
+    <rect x="525" y="372" width="70" height="4" rx="2"/>
+  </g>
+  <!-- gentle swell lines -->
+  <g stroke="#FFFFFF" stroke-width="1" opacity="0.3">
+    <path d="M0 336 q120 -8 240 0 t240 0 t240 0"/>
+    <path d="M0 360 q140 -10 280 0 t280 0 t240 0"/>
+  </g>
+
+  <!-- wet sand foreground -->
+  <path d="M0 440 Q400 410 800 440 L800 600 L0 600 Z" fill="#E0D4C0"/>
+  <path d="M0 440 Q400 410 800 440 L800 470 Q400 448 0 470 Z" fill="#D2E2DC" opacity="0.5"/>
+  <!-- foam edge -->
+  <path d="M0 446 Q200 430 400 442 T800 446" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.5"/>
+
+  <!-- washed-up brown-algae frond on sand -->
+  <g transform="translate(230, 512)" stroke="#A6884F" stroke-width="2.4" fill="none" opacity="0.55" stroke-linecap="round">
+    <path d="M-90 8 C-40 -6 30 6 100 -8"/>
+    <path d="M-50 2 C-46 -14 -40 -26 -30 -34"/>
+    <path d="M0 4 C6 -12 18 -22 32 -26"/>
+    <path d="M56 -2 C60 -16 70 -26 82 -30"/>
+  </g>
+</svg>
